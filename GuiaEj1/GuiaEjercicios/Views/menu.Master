@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.master.cs" Inherits="GuiaEjercicios.menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        #boton{
+            display: inline
+        }
+        
+        #boton li{
+            display: inline
+        }
+
+            #boton li a {
+                font-family: Arial;
+                font-size: 12px;
+                float: left;
+                padding: 10px;
+                background-color: darkcyan;
+                text-decoration: none;
+                color: white;
+            }
+        
+    </style>
+</head>
+<body>
+
+    <ul id="boton">
+        <li><a href="ejer1.aspx"> Ejercicio 1</a></li>
+        <li><a href="ejer2.aspx"> Ejercicio 2</a></li>
+        <li><a href="ejer3.aspx"> Ejercicio 3</a></li>
+        <li><a href="ejer4.aspx"> Ejercicio 4</a></li>
+        <li><a href="ejer5.aspx"> Ejercicio 5</a></li>
+        <li><a href="ejer6.aspx"> Ejercicio 6</a></li>
+        <li><a href="ejer7.aspx"> Ejercicio 7</a></li>
+        <li><a href="ejer8.aspx"> Ejercicio 8</a></li>
+        <li><a href="ejer9.aspx"> Ejercicio 9</a></li>
+        <li><a href="ejer10.aspx"> Ejercicio 10</a></li>
+
+    </ul>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
